@@ -5,6 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<style>
+		/* kritisk CSS-regler */
+		body {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 13vw auto 13vw;
+	grid-template-rows: 10vw auto 20vw;
+	grid-template-areas:
+		"header header header"
+		". main ."
+		"footer footer footer"
+}
+h1{
+	font-family: var(--font-secondaryFamily);
+}
+.siteHeader {
+	grid-area: header;
+}
+	</style>
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
